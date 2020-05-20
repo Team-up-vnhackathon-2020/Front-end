@@ -1,10 +1,12 @@
 import React from 'react';
+import './index.css'
 
 const Footer = () => {
     return(
         <footer>
-            <p>Author: Hege Refsnes</p>
-            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+            <hr/>
+            <p>Team Up</p>
+            <p>VN hackathon 2020</p>
         </footer>
     );
 }
