@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Layout from '../../Layout'
-import LoginForm from '../../components/LoginForm'
+import SignupForm from '../../components/SignupForm'
 import './index.css';
 
-class Login extends Component {
+class Signup extends Component {
   render() {
     return (
       <Layout>
-        <LoginForm/>
+        <SignupForm/>
       </Layout>
     );
   }
 }
 
-export default Login;
+export default Signup;
