@@ -1,60 +1,44 @@
 import React, { useState } from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText
 } from 'reactstrap';
 
-const Example = (props) => {
+const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <NavbarBrand href="/">Team Up</NavbarBrand>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="">Profile</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="">Status</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="">Trending</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="">Find package</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="">Send request</NavLink>
+            </NavItem>
           </Nav>
           <NavbarText>Simple Text</NavbarText>
-        </Collapse>
       </Navbar>
     </div>
   );
 }
 
-export default Example;
+export default Navigation;
