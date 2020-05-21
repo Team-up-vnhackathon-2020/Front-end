@@ -20,7 +20,7 @@ const Navigation = (props) => {
               <NavLink href="">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Profile</NavLink>
+              <NavLink href="/profile">Profile</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="">Status</NavLink>
@@ -32,7 +32,7 @@ const Navigation = (props) => {
               <NavLink href="">Find package</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Send request</NavLink>
+              <NavLink href="/request">Send request</NavLink>
             </NavItem>
           </Nav>
           <NavbarText>Simple Text</NavbarText>
